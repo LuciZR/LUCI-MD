@@ -30,7 +30,6 @@
     "fs": "^0.0.1-security",
     "google-tts-api": "^2.0.2",
     "heroku-client": "^3.1.0",
-    "imgbb-uploader": "^1.4.0",
     "inrl-bot-md": "^1.7.7",
     "jimp": "^0.16.1",
     "moment-timezone": "^0.5.34",
