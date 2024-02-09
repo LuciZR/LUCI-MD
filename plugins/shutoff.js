@@ -18,7 +18,7 @@ inrl({
 	} = await personalDB(['shutoff'], {
 		content: {}
 	}, 'get');
-	if (shutoff || shutoff == 'true') return await message.send("_already turned off!_");
+	if (shutoff && shutoff == 'true') return await message.send("_already turned off!_");
 	await personalDB(['shutoff'], {
 		content: 'true'
 	}, 'set');
@@ -38,7 +38,7 @@ inrl({
 	} = await personalDB(['shutoff'], {
 		content: {}
 	}, 'get');
-	if (!shutoff || shutoff == 'false') return await message.send("_already turned on!_");
+	if (shutoff && shutoff == 'false') return await message.send("_already turned on!_");
 	await personalDB(['shutoff'], {
 		content: 'false'
 	}, 'set');
