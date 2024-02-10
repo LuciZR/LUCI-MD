@@ -1,5 +1,6 @@
 const {
     inrl,
+    mode,
     extractUrlsFromString,
     config,
     getJson,
@@ -8,6 +9,7 @@ const {
 
 inrl({
     pattern: 'fb ? (.*)',
+    fromMe: mode,
     desc: 'download medias from Facebook',
     react: "⬇️",
     type: "downloader"
