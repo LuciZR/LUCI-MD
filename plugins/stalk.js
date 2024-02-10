@@ -1,5 +1,6 @@
 const {
 	inrl,
+	mode,
 	config,
 	getJson,
 	getBuffer
@@ -7,6 +8,7 @@ const {
 
 inrl({
     pattern: 'ig ?(.*)',
+    fromMe: mode,
     desc: 'Insta Profile Search',
     type: 'stalk',
 },
@@ -32,6 +34,7 @@ async (message, match) => {
 
 inrl({
 		pattern: 'ytc ?(.*)',
+	        fromMe: mode,
 		desc: 'stalk yt channel',
 		type: 'stalk',
 	},
@@ -68,6 +71,7 @@ inrl({
 )
 inrl({
 		pattern: 'git ?(.*)',
+	        fromMe: mode,
 		desc: 'stalk git user name',
 		type: 'stalk',
 	},
