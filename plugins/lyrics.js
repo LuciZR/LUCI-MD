@@ -1,6 +1,7 @@
 //result from musixmatcH 
 const {
 	inrl,
+	mode,
 	fetchJson,
 	lang,
 	config
@@ -9,6 +10,7 @@ const {
 
 inrl({
 	pattern: 'lyrics',
+	fromMe: mode,
 	desc: lang.LYRICS.DESC,
 	type: "search"
 }, async (m, match) => {
