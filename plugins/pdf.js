@@ -4,6 +4,7 @@ const axios = require('axios');
 const path = './media/pdf';
 const {
 	inrl,
+	mode,
 	getRandom,
 	config
 } = require('../lib');
@@ -13,6 +14,7 @@ inrl({
 	pattern: 'pdf ?(.*)',
 	desc: "Images/texts to PDF",
 	type: 'converter',
+	fromMe: mode,
 	usage: `_1. Input images/text using .pdf_\n_2. Get output pdf using .pdf get_\n_3. Added images by mistake? then delete all inputted images using .pdf delete_\n_4. All files will be auto deleted after the output is produced_`
 }, async (message, match) => {
 	match = match || message.reply_message.text;
