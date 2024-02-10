@@ -1,5 +1,7 @@
 const {
-       inrl,lang
+       inrl,
+       lang,
+       mode
 } = require('../lib');
 
 
@@ -7,6 +9,7 @@ inrl({
     pattern: 'ping ?(.*)',
     desc: lang.PING_DESC,
     react: "💯",
+    fromMe: mode,
     type: 'info'
 }, async (message, match) => {
     const start = new Date().getTime()
