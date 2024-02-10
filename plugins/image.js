@@ -1,6 +1,7 @@
 const {
     inrl,
     lang,
+    mode,
     badWordDetect,
     getJson,
     config
@@ -12,6 +13,7 @@ inrl({
     pattern: "img",
     usage: 'send google image result for give text',
     react: "🖼",
+    fromMe: mode,
     type: "search",
     desc : lang.IMG.IMG_DESC
 }, async (message, match) => {
