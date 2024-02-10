@@ -1,5 +1,6 @@
 const {
         inrl,
+        mode,
         config,
         getJson
 } = require('../lib');
@@ -7,6 +8,7 @@ const {
 inrl({
         pattern: 'reddit',
         type: "search",
+        fromMe: mode,
         desc: "searches and get data from reddit",
 }, async (message, match) => {
                 match = match || message.reply_message.text;
