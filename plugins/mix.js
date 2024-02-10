@@ -1,6 +1,7 @@
 const ff = require('fluent-ffmpeg');
 const {
    inrl,
+   mode,
    getBuffer,
    extractUrlsFromString
 } = require('../lib');
@@ -14,6 +15,7 @@ const {
 
 inrl({
    pattern: 'mix',
+   fromMe: mode,
    desc: 'mix image and audio to video',
    type: "media"
 }, async (message, match) => {
