@@ -2,6 +2,7 @@ const {
 	inrl,
 	extractUrlsFromString,
 	lang,
+	mode,
 	getJson,
 	config,
 	isInstagramURL
@@ -13,6 +14,7 @@ inrl({
 	pattern: 'insta ?(.*)',
 	desc: lang.INSTA.DESC,
 	react: "😛",
+	fromMe: mode,
 	type: "downloader",
 }, async (message, match) => {
 	if (match.startsWith('dl-url:')) {
@@ -53,6 +55,7 @@ inrl({
 	pattern: 'story ?(.*)',
 	desc: lang.INSTA.DESC,
 	react: "😛",
+	fromMe: mode,
 	type: "downloader",
 }, async (message, match) => {
 	if (match.startsWith('dl-url:')) {
