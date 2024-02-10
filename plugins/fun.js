@@ -1,5 +1,6 @@
 const {
         inrl,
+        mode,
         sleep
 } = require('../lib');
 const dog = ["𓃩", "𓃦", "𓃥", "𓃙", "𓃥", "𓃙", "𓃥", "𓃙", "𓃥", "𓃙", "𓃩", "𓃠"];
@@ -11,7 +12,7 @@ const bq = ["The most amount yolks found in a single chicken egg were 9 yolks.",
 inrl({
         pattern: 'dog',
         DismissPrefix: true,
-        fromMe: true,
+        fromMe: mode,
         type: "fun"
 }, async (m) => {
         const msg = await m.send("𓃠");
@@ -27,7 +28,7 @@ inrl({
 inrl({
         pattern: 'goat',
         DismissPrefix: true,
-        fromMe: true,
+        fromMe: mode,
         type: "fun"
 }, async (m) => {
         const msg = await m.send("𓃜");
@@ -43,7 +44,7 @@ inrl({
 inrl({
         pattern: 'bird',
         DismissPrefix: true,
-        fromMe: true,
+        fromMe: mode,
         type: "fun"
 }, async (m) => {
         const msg = await m.send("𓅟");
