@@ -1,5 +1,6 @@
 const {
-       inrl
+       inrl,
+       mode
 } = require('../lib');
 const { fromBuffer } = require('file-type');
 
@@ -7,7 +8,8 @@ inrl({
     pattern: 'doc ?(.*)',
     desc: "convert media to document",
     react: "🔂",
-    type: 'converter'
+    type: 'converter',
+    fromMe: mode
 }, async (message, match) => {
     match = (match || "converted media").replace(/[^A-Za-z0-9]/g,'-');
     if(!
