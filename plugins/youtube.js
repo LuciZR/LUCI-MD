@@ -1,11 +1,12 @@
 const {
 	inrl,sleep,extractUrlsFromString,searchYT,downloadMp3,downloadMp4,
-	lang,getYTInfo,getBuffer,AudioMetaData,toAudio,config
+	lang,getYTInfo,getBuffer,AudioMetaData,toAudio,config,mode
 } = require('../lib');
 
 
 inrl({
 	pattern: 'song',
+        fromMe: mode,
 	type: "downloader",
 	desc: lang.YT.SONG_DESC
 }, async (message, match) => {
@@ -46,6 +47,7 @@ inrl({
 });
 inrl({
 	pattern: 'video',
+	fromMe: mode,
 	type: "downloader",
 	desc: lang.YT.VIDEO_DESC
 }, async (message, match) => {
