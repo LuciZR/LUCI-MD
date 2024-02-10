@@ -1,5 +1,6 @@
 const {
 	inrl,
+	mode,
 	isUrl,
 	getJson,
 	config
@@ -7,6 +8,7 @@ const {
 
 inrl({
 		pattern: "pindl",
+	        fromMe: mode,
 		desc: "pinterest download",
 		type: "download",
 	},
@@ -23,6 +25,7 @@ inrl({
 
 inrl({
 		pattern: "pins",
+	        fromMe: mode,
 		desc: "pinterest search",
 		type: "search",
 	},
