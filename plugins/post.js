@@ -3,12 +3,14 @@ const axios = require('axios');
 
 const {
 	inrl,
+	mode,
 	lang,
 	config
 } = require('../lib');
 
 inrl({
 	pattern: '$ocr',
+	fromMe: mode,
 	desc: lang.OCR.DESC,
 	type: "eva"
 }, async (message, match) => {
@@ -26,6 +28,7 @@ inrl({
 
 inrl({
 	pattern: 'meme',
+	fromMe: mode,
 	desc: 'add text over image',
 	type: "edit"
 }, async (message, match) => {
