@@ -1,5 +1,6 @@
 const {
 	inrl,
+	mode,
 	truecaller,
 } = require('../lib/');
 
