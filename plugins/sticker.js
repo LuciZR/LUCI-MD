@@ -1,5 +1,6 @@
 const {
   inrl,
+  mode,
   lang,
   config
 } = require('../lib');
@@ -9,6 +10,7 @@ const path = require("path");
 inrl(
   {
     pattern: "sticker",
+    fromMe: mode,
     desc: lang.STICKER.DESC,
     react: "🔁",
     type : 'converter',
