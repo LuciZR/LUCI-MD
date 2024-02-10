@@ -1,11 +1,12 @@
 const {
 	inrl,
+	mode,
 	elevenlabs
 } = require('../lib');
 inrl({
 	pattern: "aitts",
 	type: "eva",
-	fromMe: true,
+	fromMe: mode,
 	desc: 'gernate ai voices'
 }, async (message, match) => {
 	if (match == 'list') return await message.send(`╭「 *List of Aitts* 」
