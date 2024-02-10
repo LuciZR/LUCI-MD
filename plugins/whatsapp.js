@@ -1,5 +1,6 @@
 const {
 	inrl,
+	mode,
 	getCompo,
 	sleep,
 	lang,
@@ -26,6 +27,7 @@ inrl({
 	pattern: 'dlt',
 	desc: lang.WHATSAPP.DEL_DESC,
 	react: "🤌",
+	fromMe: mode,
 	type: 'whatsapp',
 	onlyGroup: true
 }, async (message, match) => {
@@ -43,6 +45,7 @@ inrl({
 
 inrl({
 	pattern: '$iswa ?(.*)',
+	fromMe: mode,
 	desc: lang.WHATSAPP.ISWA.ISWA_DISC,
 	type: 'search',
 }, async (m, match) => {
@@ -100,6 +103,7 @@ inrl({
 
 inrl({
 	pattern: '$nowa ?(.*)',
+	fromMe: mode,
 	desc: lang.WHATSAPP.NOWA.DESC,
 	type: 'search',
 }, async (m, match) => {
@@ -127,6 +131,7 @@ inrl({
 
 inrl({
 	pattern: 'jid',
+	fromMe: mode,
 	desc: lang.USER.JID,
 	react: "💯",
 	type: "general"
