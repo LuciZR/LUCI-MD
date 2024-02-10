@@ -1,8 +1,9 @@
-const { inrl } = require('../lib');
+const { inrl, mode } = require('../lib');
 
 
 inrl({
         pattern: 'whois ?(.*)',
+        fromMe: mode,
         type: 'info',
         desc: 'get user bio and image'
 }, async (message, match) => {
