@@ -1,5 +1,6 @@
 const {
 	inrl,
+	mode,
 	config,
 	getBuffer,
 } = require('../lib');
@@ -9,6 +10,7 @@ inrl({
 	pattern: 'diffusion ?(.*)',
 	type: "eva",
 	desc: "stable diffusion ai",
+	fromMe: mode
 }, async (message, match) => {
 	match = match || message.reply_message.text;
 	if (!match) return await message.send("*please give me an query!*");
