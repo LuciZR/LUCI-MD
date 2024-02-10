@@ -1,6 +1,7 @@
 const {
 	inrl,
 	lang,
+	mode,
 	config,
 	getJson
 } = require('../lib');
@@ -9,6 +10,7 @@ const axios= require('axios');
 inrl({
 	pattern: 'fancy ?(.*)',
 	type: 'utility',
+	fromMe: mode,
 	desc: lang.FANCY.DESC
 }, async (message, match) => {
 	if (!match && !message.reply_message.text) {
