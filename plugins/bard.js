@@ -1,5 +1,6 @@
 const {
 	inrl,
+	mode,
 	config,
 	getJson,
 } = require('../lib');
@@ -8,6 +9,7 @@ const {
 inrl({
 	pattern: 'bard ?(.*)',
 	type: "eva",
+	fromMe: mode,
 	desc: "bard ai",
 }, async (message, match) => {
 	match = match || message.reply_message.text;
