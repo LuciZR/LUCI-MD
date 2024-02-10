@@ -1,5 +1,6 @@
 const {
 	inrl,
+	mode,
 	config,
 	getBuffer,
 } = require('../lib');
@@ -8,6 +9,7 @@ const {
 inrl({
 	pattern: 'bing ?(.*)',
 	type: "eva",
+	fromMe: mode,
 	desc: "bing ai",
 }, async (message, match) => {
 	match = match || message.reply_message.text;
