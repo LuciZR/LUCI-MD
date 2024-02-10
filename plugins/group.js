@@ -13,6 +13,7 @@ const {
 inrl({
 	pattern: 'promote ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.PROMOTE.DESC
 }, async (message, match) => {
@@ -31,6 +32,7 @@ inrl({
 inrl({
 	pattern: 'demote ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.DEMOTE.DESC
 }, async (message, match) => {
@@ -49,6 +51,7 @@ inrl({
 inrl({
 	pattern: 'kick ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.KICK.DESC
 }, async (message, match) => {
@@ -86,6 +89,7 @@ inrl({
 inrl({
 	pattern: 'add ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.ADD.DESC
 }, async (message, match) => {
@@ -133,6 +137,7 @@ inrl({
 inrl({
 	pattern: 'gpp ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.GPP.DESC
 }, async (message, match) => {
@@ -150,6 +155,7 @@ inrl({
 inrl({
 	pattern: 'fullgpp ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.FULL_GPP.DESC
 }, async (message, match) => {
@@ -166,6 +172,7 @@ inrl({
 inrl({
 	pattern: 'gname ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.G_NAME.DESC
 }, async (message, match) => {
@@ -182,6 +189,7 @@ inrl({
 inrl({
 	pattern: 'gdesc ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.G_DESC.DESC
 }, async (message, match) => {
@@ -198,6 +206,7 @@ inrl({
 inrl({
 	pattern: 'mute ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.MUTE.DESC
 }, async (message, match) => {
@@ -212,6 +221,7 @@ inrl({
 inrl({
 	pattern: 'unmute ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.UNMUTE.DESC
 }, async (message, match) => {
@@ -226,6 +236,7 @@ inrl({
 inrl({
 	pattern: 'lock ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.LOCK.DESC
 }, async (message, match) => {
@@ -240,6 +251,7 @@ inrl({
 inrl({
 	pattern: 'unlock ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.UNLOCK.DESC
 }, async (message, match) => {
@@ -264,6 +276,7 @@ inrl({
 	pattern: 'invite ?(.*)',
 	type: 'group',
 	onlyGroup: true,
+	fromMe: true,
 	desc: lang.GROUP.INVITE.DESC
 }, async (message, match) => {
 	const BotAdmin = await isBotAdmin(message);
@@ -277,6 +290,7 @@ inrl({
 inrl({
 	pattern: 'revoke ?(.*)',
 	type: 'group',
+	fromMe: true,
 	onlyGroup: true,
 	desc: lang.GROUP.REVOKE.DESC
 }, async (message, match) => {
@@ -292,6 +306,7 @@ inrl({
 	pattern: 'join ?(.*)',
 	type: 'owner',
 	fromMe: true,
+	fromMe: true,
 	desc: lang.GROUP.ACPT.DESC
 }, async (message, match) => {
 	if (!match || !match.match(/^https:\/\/chat\.whatsapp\.com\/[a-zA-Z0-9]/)) return await message.reply(lang.GROUP.ACPT.NOT_VALID);
@@ -303,6 +318,7 @@ inrl({
 inrl({
 	pattern: 'getinfo ?(.*)',
 	type: 'group',
+	fromMe: true,
 	desc: lang.GROUP.GET_INFO.DESC
 }, async (message, match) => {
 	match = match || message.reply_message.text;
