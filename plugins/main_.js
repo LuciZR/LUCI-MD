@@ -3,6 +3,7 @@ const {
     fetchJson,
     getBuffer,
     sendUrl,
+    mode,
     AudioMetaData,
     lang,
     toAudio,
@@ -14,6 +15,7 @@ inrl({
     pattern: 'url',
     desc: lang.GENERAL.URL_DESC,
     react: "⛰️",
+    fromMe: mode,
     type: "converter"
 }, async (message, match) => {
     if (!message.isMedia) return message.reply(lang.BASE.NEED.format('image/sticker/video/audio'));
@@ -24,6 +26,7 @@ inrl({
     pattern: 'take',
     desc: lang.GENERAL.TAKE_DESC,
     react: "⚒️",
+    fromMe: mode,
     type: "utility"
 }, async (message, match) => {
         if (!message.reply_message.sticker && !message.reply_message.audio && !message.reply_message.image && !message.reply_message.video) return message.reply('reply to a sticker/audio');
@@ -50,6 +53,7 @@ inrl({
     pattern: 'emix',
     desc: lang.GENERAL.EMIX_DESC,
     react: "🤌",
+    fromMe: mode,
     type: "create"
 }, async (message, match) => {
     if (!match) return message.send(lang.GENERAL.NEED_EMOJI.format("emix"));
