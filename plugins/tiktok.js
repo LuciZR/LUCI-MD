@@ -1,5 +1,6 @@
 const {
     inrl,
+    mode,
     extractUrlsFromString
 } = require('../lib/');
 const axios = require('axios');
@@ -9,6 +10,7 @@ const {
 
 inrl({
     pattern: 'tiktok ? (.*)',
+    fromMe: mode,
     desc: 'download medias frok Facebook',
     react: "⬇️",
     type: "downloader"
