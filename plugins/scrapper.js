@@ -1,5 +1,6 @@
 const {
     inrl,
+    mode,
     weather,
     ringtone,
     GenListMessage,
@@ -11,6 +12,7 @@ const {
 
 inrl({
     pattern: 'google',
+    fromMe: mode,
     desc: lang.SCRAP.GOOGLE_DESC,
     react: "🙃",
     type: "search"
@@ -25,6 +27,7 @@ inrl({
 
 inrl({
     pattern: 'ringtone',
+    fromMe: mode,
     desc: lang.SCRAP.RING_DESC,
     react : "🙃",
     type: "search"
@@ -37,6 +40,7 @@ inrl({
 
 inrl({
     pattern: 'weather',
+    fromMe: mode,
     desc: lang.SCRAP.WEATHER_DESC,
     react : "🔥",
     type: "search"
@@ -46,7 +50,8 @@ inrl({
 });
 
 inrl({
-    on: "text"
+    on: "text",
+    fromMe: mode,
 }, async (m, match) => {
     if (!m.reply_message || !m.reply_message?.fromMe) return;
     if(!m.body.includes(lang.SCRAP.RING_LIST)) return;
