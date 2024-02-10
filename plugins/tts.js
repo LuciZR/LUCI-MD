@@ -1,10 +1,13 @@
 const {
-    inrl, TTS,
+    inrl,
+    mode,
+    TTS,
     lang
 } = require('../lib');
 
 inrl({
     pattern: 'tts',
+    fromMe: mode,
     desc: lang.TTS_DESC,
     react: "💔",
     type: "converter"
