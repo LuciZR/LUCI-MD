@@ -2,11 +2,13 @@ const {
     inrl,
     getBuffer,
     lang,
+    mode,
     config
 } = require('../lib');
 inrl({
     pattern: "ttp",
     type: "misc",
+    fromMe: mode,
     desc: lang.TTP.DESC
 }, async (message, match) => {
     match = match || message.reply_message.text;
@@ -17,6 +19,7 @@ inrl({
 inrl({
     pattern: "attp",
     type: "misc",
+    fromMe: mode, 
     desc: lang.TTP.DESC
 }, async (message, match) => {
     match = match || message.reply_message.text;
