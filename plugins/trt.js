@@ -1,8 +1,9 @@
-const { TRT, inrl, lang } = require('../lib');
+const { TRT, mode, inrl, lang } = require('../lib');
 
 inrl(
 	{
 		pattern: 'trt ?(.*)',
+		fromMe: mode,
 		desc: lang.TRT.DESC,
 		type: 'search',
 	},
