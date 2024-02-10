@@ -1,9 +1,9 @@
-const { inrl, GPT, config,getJson} = require('../lib/');
+const { inrl, GPT, mode, config,getJson} = require('../lib/');
 inrl({
     pattern: "gpt",
     desc: 'get open ai chatgpt response',
     type: "eva",
-    fromMe: false
+    fromMe: mode
 }, async (message, match) => {
     if(match && match == 'clear') {
         await GPT.clear();
