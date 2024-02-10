@@ -1,5 +1,6 @@
 const {
         inrl,
+        mode,
         badWordDetect,
         config,
         getJson 
@@ -9,7 +10,8 @@ inrl({
         pattern: '$imageai',
         desc: 'generate image with ai',
         react: "🤩",
-        type: "eva"
+        type: "eva",
+        fromMe: mode
 }, async (message, match) => {
         match = match || message.reply_message.text;
         if (!match) return await message.reply('*_give me a text to generate ai image!_*');
