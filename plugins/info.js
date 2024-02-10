@@ -1,5 +1,6 @@
 const {
 	inrl,
+	mode,
 	config,
 	getJson
 } = require("../lib/");
@@ -7,6 +8,7 @@ const {
 inrl(
 	{
 		pattern: "dob",
+		fromMe: mode,
 		desc: "get birth details",
 		type: "information",
 	},
@@ -55,6 +57,7 @@ _*☇ seconds :* ${next.remainingSeconds}_`);
 inrl(
 	{
 		pattern: "country",
+		fromMe: mode,
 		desc: "get country details",
 		type: "information",
 	},
@@ -111,6 +114,7 @@ _*Local Time:* ${times && times.length ? `${times[0].time} (${times[0].zone})` :
 inrl(
 	{
 		pattern: "checkapi",
+		fromMe: mode,
 		desc: "check inrlkey",
 		type: "information",
 	},
