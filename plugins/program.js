@@ -1,5 +1,6 @@
 const {
     inrl,
+    mode,
     config,
     getJson
 } = require('../lib');
@@ -12,6 +13,7 @@ const postJson = async (id, options) => {
 
 inrl({
     pattern: 'emorece ?(.*)',
+    fromMe: mode,
     desc: "convert ASCII to morece",
     type: 'program',
 }, async (message, match) => {
@@ -29,6 +31,7 @@ inrl({
 });
 inrl({
     pattern: 'dmorece ?(.*)',
+    fromMe: mode,
     desc: "decode morece to ASCII",
     type: 'program',
 }, async (message, match) => {
@@ -47,6 +50,7 @@ inrl({
 inrl({
     pattern: 'ujs ?(.*)',
     desc: "minify JavaScript",
+    fromMe: mode,
     type: 'program',
 }, async (message, match) => {
     match = match || message.reply_message.text;
@@ -63,6 +67,7 @@ inrl({
 });
 inrl({
     pattern: 'ojs ?(.*)',
+    fromMe: mode,
     desc: "obfuscate JavaScript",
     type: 'program',
 }, async (message, match) => {
@@ -80,6 +85,7 @@ inrl({
 });
 inrl({
     pattern: 'bjs ?(.*)',
+    fromMe: mode,
     desc: "beautify JavaScript",
     type: 'program',
 }, async (message, match) => {
@@ -97,6 +103,7 @@ inrl({
 });
 inrl({
     pattern: 'bcss ?(.*)',
+    fromMe: mode,
     desc: "beautify css",
     type: 'program',
 }, async (message, match) => {
@@ -115,6 +122,7 @@ inrl({
 });
 inrl({
     pattern: 'bhtml ?(.*)',
+    fromMe: mode,
     desc: "beautify html",
     type: 'program',
 }, async (message, match) => {
