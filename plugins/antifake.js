@@ -6,6 +6,7 @@ const {
 inrl({
     pattern: 'antifake ?(.*)',
     desc: 'remove fake numbers',
+    fromMe: true,
     react: '🖕',
     type: 'manage',
     onlyGroup: true
