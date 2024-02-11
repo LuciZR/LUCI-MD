@@ -1,4 +1,4 @@
-## INRL Multi Device Whatsapp Bot.
+## LUCI Multi Device Whatsapp Bot.
 
 ***
 
