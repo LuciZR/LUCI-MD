@@ -78,6 +78,7 @@ SUPPORT GROUP
 ---
 ### EXTERNAL PLUGINS
 
+
 [Click Here](https://upper-romy-inrl-bot.koyeb.app/plugins/list)
 
 ---
