@@ -23,7 +23,7 @@
 
 #### Deploy To Heroku 
 
-<a href="https://upper-romy-inrl-bot.koyeb.app/deploy/heroku"><img title="LUCI-MD Deploy Heroku" src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
+<a href="https://dashboard.heroku.com/new?button-url=https://github.com/LuciZR/LUCI-MD&template=https://github.com/LuciZR/LUCI-MD.git"><img title="LUCI-MD Deploy Heroku" src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
 
 
 ---
