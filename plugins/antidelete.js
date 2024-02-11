@@ -18,7 +18,7 @@ inrl({
         await groupDB(['antidelete'], {jid: message.jid, content: 'true'}, 'set');
         return await message.reply('_activated_')
     } else if (match == 'off') {
-        if (antidelete == 'false') return message.reply('_Already Deactivated_');
+        if (antidelete == 'true') return message.reply('_Already Deactivated_');
         await groupDB(['antidelete'], {jid: message.jid, content: 'false'}, 'set');
         return await message.reply('_deactivated_')
     }
