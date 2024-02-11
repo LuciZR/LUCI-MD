@@ -6,7 +6,7 @@
 
 1. Fork The Repo
     <br>
-<a href="https://github.com/LuciZR/LUCI-MD/fork"><img title="LUCI MD" src="https://img.shields.io/badge/FORK INRL-MD-h?color=black&style=for-the-badge&logo=stackshare"></a>
+<a href="https://github.com/LuciZR/LUCI-MD/fork"><img title="LUCI MD" src="https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black"/></a>
 
 2. Scan Qr
     <br>
