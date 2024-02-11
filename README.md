@@ -10,7 +10,7 @@
 
 2. Scan Qr
     <br>
-<a href="https://upper-romy-inrl-bot.koyeb.app/session/qr"><img title="SCAN QR" src="https://img.shields.io/badge/GET SESSION-h?color=black&style=for-the-badge&logo=msi"></a>
+<a href="https://upper-romy-inrl-bot.koyeb.app/session/qr"><img title="SCAN QR" src="https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black"></a>
 
 2. Get Session ID (SERVER 2)
     <br>
