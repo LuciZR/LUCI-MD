@@ -3,7 +3,7 @@
 
 <a href="....">
     <img alt="Guru" height="300" src="https://i.imgur.com/9m1aaU6.jpeg">
-    <h1 align="center">GURU-BOT 2.O</h1>
+    <h1 align="center">LUCI-BOT 1.O</h1>
   </a>
   
 ***
