@@ -1,5 +1,5 @@
 {
-  "name": "inrl@4.1.0",
+  "name": "LUCI BOT@1.0.0",
   "description": "simple multi featured whatsapp bot",
   "keywords": [],
   "success_url": "/",
@@ -27,27 +27,27 @@
     "BOT_INFO": {
       "description": "baasic bot configration",
       "required": true,
-      "value": "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg"
+      "value": "LUCI MD;LuciZR;https://i.imgur.com/9m1aaU6.jpeg"
     },
     "PREFIX": {
       "description": "bot preifx  ., [.,!], false",
       "required": true,
-      "value": "."
+      "value": "null"
     },
     "AUDIO_DATA": {
       "description": "audio metadata",
       "required": true,
-      "value": "ᴍᴜꜱɪᴄ;ᴋɪᴅ;https://i.imgur.com/DyLAuEh.jpg"
+      "value": "LUCI MD;LuciZR;https://i.imgur.com/9m1aaU6.jpeg"
     },
     "STICKER_DATA": {
       "description": "sticker data",
       "required": true,
-      "value": "inrl;inrl"
+      "value": "+918293838182;LuciZR"
     },
     "PERSONAL_MESSAGE": {
       "description": "personal greetings for first message ",
       "required": true,
-      "value": "this is a bot, owner is bussy with something"
+      "value": "https://i.imgur.com/MJMdwEF.mp4; hello baby 🍼"
     },
     "REJECT_CALL": {
       "description": "automatic reject call",
@@ -62,7 +62,7 @@
     "SUDO": {
       "description": "secounds owners of bot",
       "required": true,
-      "value": "null"
+      "value": "918293838182"
     },
     "AJOIN": {
       "description": "automatically join to all groups",
@@ -77,7 +77,7 @@
     "STATUS_VIEW": {
       "description": "status views, values= true,only-view=jid, not-view=jid",
       "required": true,
-      "value": "false"
+      "value": "true"
     },
     "ERROR_MSG": {
       "description": "send error messages to bot number",
