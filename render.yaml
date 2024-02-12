@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: inrl-md
+    name: LUCI BOT
     env: node
     branch: main
-    repo: https://github.com/inrl-official/inrl-bot-md.git
+    repo: https://github.com/LuciZR/LUCI-BOT.git
     buildCommand: npm install
     startCommand: npm start
     plan: free
@@ -12,7 +12,7 @@ services:
       - key: SESSION_ID
         sync: false
       - key: BOT_INFO
-        value: inrl;bot;https://i.imgur.com/VIpl3q5.mp4
+        value: LUCI BOT;LuciZR;https://i.imgur.com/MJMdwEF.mp4
       - key: WARN_COUNT
         value: 3
       - key: STATUS_VIEW
@@ -30,8 +30,8 @@ services:
       - key: REACT
         value: command
       - key: AUDIO_DATA
-        value: inrl;bot;https://i.imgur.com/VgxJeCm.jpeg
+        value: LUCI MD;LuciZR;https://i.imgur.com/9m1aaU6.jpeg
       - key: SUDO
-        value: 917025673121
+        value: 918293838182
       - key: DATABASE_URL
         sync: false
