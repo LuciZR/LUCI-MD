@@ -1,6 +1,6 @@
 {
-  "name": "inrl-bot-md",
-  "version": "4.1.0",
+  "name": "LUCI BOT",
+  "version": "1.0.0",
   "description": "WhatsApp bot made with nodejs and baileys",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inrl-official/inrl-bot-md.git test"
+    "url": "git+https://github.com/LuciZR/LUCI-BOT.git test"
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
