@@ -12,7 +12,7 @@ module.exports = {
     },
     PORT: process.env.PORT || 3000,
     BASE_URL : "https://upper-romy-inrl-bot.koyeb.app/",
-    REPO: "LuciZR/LUCI-BOT",
+    REPO: "inrl-official/inrl-bot-md",
     BGM_URL : process.env.BGM_URL || "null",
     REJECT_CALL : toBool(process.env.REJECT_CALL || 'false'),
     BADWORD_BLOCK : toBool(process.env.BADWORD_BLOCK || 'false'),
