@@ -1,6 +1,6 @@
 {
-  "name": "LUCI BOT",
-  "version": "4.1.0",
+  "name": "luci-bot",
+  "version": "1.1.0",
   "description": "WhatsApp bot made with nodejs and baileys",
   "main": "index.js",
   "scripts": {
